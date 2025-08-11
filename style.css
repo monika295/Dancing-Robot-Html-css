@@ -1,0 +1,220 @@
+body{
+    background:linear-gradient(90deg, rgb(238, 8, 238),orange);
+    color:black;
+
+}
+.main_div{
+    height:590px;
+    width:400px;
+    border: 2px  solid red;
+    margin: auto;
+    margin-top: 100px;
+    background: linear-gradient(deeppink,blue);
+}
+.face{
+    height: 150px;
+    width: 150px;
+    background:chartreuse;
+    margin-left:120px;
+    margin-top: 30px;
+    border-top-left-radius: 50%;
+    border-top-right-radius:50%;
+    position: absolute;
+    border:2px  solid black;
+    
+}
+.leye,.reye{
+    height:25px;
+    width:25px;
+    background: white;
+    border-radius: 50%;
+    border:2px  solid black;
+}
+.eyes{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+.main_div:hover .face{
+    animation: changeface 1s infinite ease-in-out;
+}
+@keyframes changeface{
+
+    0%{transform:translateX(20px);}
+    25%{transform:translateX(-20px);}
+    50%{transform:translateX(20px);}
+    75%{transform:translateX(-20px);}
+    100%{transform:translateX(20px);}
+}
+.main_div:hover .leye{
+    animation: changeleye 1s infinite ease-in-out;
+}
+@keyframes changeleye{
+    0%{background: black;}
+    50%{background:yellow;}
+    100%{background: red;}
+}
+.main_div:hover .reye{
+    animation: changereye 1s infinite ease-in-out;
+}
+@keyframes changereye{
+    0%{background:black;}
+    50%{background: yellow;}
+    100%{background:red;}
+}
+.larm{
+    height:125px;
+    width: 25px;
+    background: chartreuse;
+    margin-right:10px;
+    margin-top: 12px;
+    border-radius: 50px;
+    border:2px  solid black;
+}
+.rarm{
+   height:125px;
+    width: 25px;
+    background: chartreuse;
+    margin-left:10px;
+    margin-top: 12px;
+    border-radius: 50px;
+    border:2px  solid black;
+}
+    .mid{
+        height: 162px;
+        width: 150px;
+        background: chartreuse;
+        border-radius: 20px;
+        margin-top: 24px;
+        border-bottom-left-radius: 50%;
+    border-bottom-right-radius:50%;
+    border:2px  solid black;
+        }
+.center{
+    display:flex;
+    margin-top: 190px;
+    margin-left: 85px;
+}
+.main_div:hover .larm{
+    animation: changelarm 3s infinite ease-in-out;
+}
+.main_div:hover .rarm{
+    animation: changerarm 3s infinite ease-in-out;
+}
+@keyframes changelarm{
+    
+    from { transform: translateX(10px); }
+    to   { transform: translateX(-10px); }
+    0%{
+        transform: rotate(-160deg);
+        transform-origin:  top center ;
+    }
+    25%{
+        transform: rotate(47deg);
+        transform-origin:  top center;
+    }
+    50%{
+        transform: rotate(-160deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(-360deg);
+        transform-origin: top center;
+    }
+   100%{
+        transform: rotate(47deg);
+        transform-origin:top center;
+    }
+}
+@keyframes changerarm{
+    
+    from { transform: translateX(-10px); }
+    to   { transform: translateX(10px); }
+    0%{
+        transform: rotate(47deg);
+        transform-origin:  top center ;
+    }
+    25%{
+        transform: rotate(-160deg);
+        transform-origin:  top center;
+    }
+    50%{
+        transform: rotate(47deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+    }
+   100%{
+        transform: rotate(-47deg);
+        transform-origin:top center;
+    }
+}
+.main_div:hover .mid{
+     animation: changemid 3s infinite ease-in-out;
+}
+@keyframes changemid{
+    0%{
+   transform: rotate(45deg);
+   transform-origin: top center;
+    }
+    25%{
+        transform: rotate(-45deg);
+        transform-origin:  top center;
+    }
+    50%{
+        transform: rotate(45deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(-360deg);
+        transform-origin: top center;
+    }
+   100%{
+        transform: rotate(45deg);
+        transform-origin:top center ;
+    }
+       
+}
+.lleg,.rleg{
+    height:125px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    border:2px  solid black;
+}
+.legs{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 4px;
+}
+.main_div:hover .lleg{
+     animation: changeleg 3s infinite ease-in-out;
+}
+.main_div:hover .rleg{
+     animation: changeleg 3s infinite ease-in-out;
+}
+@keyframes changeleg{
+    
+    0%{
+   transform: rotate(-160deg);
+   transform-origin: top center;
+    }
+    25%{
+        transform: rotate(47deg);
+        transform-origin:  top center ;
+    }
+    50%{
+        transform: rotate(-160deg);
+        transform-origin: top center ;
+    }
+    75%{
+        transform: rotate(-360deg);
+        transform-origin: top center;
+    }
+   100%{
+        transform: rotate(160deg);
+        transform-origin:top center;
+    }
+}
